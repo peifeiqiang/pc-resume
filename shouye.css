@@ -4,8 +4,9 @@ body, div, ul, ol, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, p, a, input, span, i,
     font-family: "微软雅黑", "Microsoft Yahei", Arial, "宋体";
     font-size: 12px;
 }
-.body{
-    overflow: hidden;
+html body{
+
+    overflow-x: hidden;
 }
 ul, ol, dl {
     list-style: none;
