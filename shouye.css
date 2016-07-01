@@ -1,0 +1,1652 @@
+body, div, ul, ol, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, p, a, input, span, i, b, em, u {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑", "Microsoft Yahei", Arial, "宋体";
+    font-size: 12px;
+}
+.body{
+    overflow: hidden;
+}
+ul, ol, dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2a2a2a;
+}
+
+img, input {
+    border: none;
+    outline: none;
+}
+
+.clear {
+    height: 0;
+    line-height: 0;
+    clear: both;
+    font-size: 0;
+}
+
+/*默认样式重置*/
+
+/*head样式*/
+.head {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 77px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    background-color:white ;
+    display: block;
+}
+
+.head_inner {
+    margin: 0 auto;
+    padding: 0;
+    width: 1240px;
+    height: 77px;
+    z-index: 99;
+    position: relative;
+    background-color: white
+}
+
+.head_inner .site_loge {
+    padding-top: 10px;
+    width: 220px;
+    height: 60px;
+    background: url("tupian/logo.png") 0 -54px no-repeat;
+}
+
+.head_inner .site_loge .link_logo {
+    background: url("tupian/logo.png") no-repeat;
+    width: 158px;
+    height: 54px;
+    display: block;
+}
+
+.head_inner .site_loge .link_logo .link_inner {
+    display: none;
+}
+
+.head_inner .head_left {
+    position: absolute;
+    top: 14px;
+    left: 200px;
+    width: 120px;
+    height: 50px;
+}
+
+.head_inner .head_left a img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.head_inner .top_search {
+    position: absolute;
+    top: 16px;
+    left: 360px;
+    width: 518px;
+    height: 46px;
+    zoom: 1;
+}
+
+.head_inner .top_search .search_form {
+    display: block;;
+    width: 100%;
+    height: 100%;
+}
+
+.head_inner .top_search .search_form .serach_inner {
+    position: relative;
+    float: left;
+    width: 433px;
+    height: 46px;
+
+}
+
+.head_inner .top_search .search_form .serach_ipt {
+    opacity: 0.5;
+    float: left;;
+    width: 388px;
+    height: 44px;
+    padding-left: 34px;
+    padding-right: 10px;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    overflow: hidden;
+    background: url("tupian/xuebitop.png") 0 -54px;
+}
+
+.head_inner .top_search .search_form .ico_search {
+    background: url("tupian/xuebitop.png") 0 -206px no-repeat;
+    width: 14px;
+    height: 14px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 16px;
+}
+
+.head_inner .top_search .search_form .search_btn {
+    width: 85px;
+    height: 46px;
+    border: none;
+    position: absolute;
+    right: 0;
+    background: url("tupian/xuebitop.png") 0 -108px no-repeat;
+}
+
+.head_inner .top_search .search_form .search_btn span {
+    display: none;
+}
+
+.head_inner .head_right {
+    width: 229px;
+    height: 43px;
+    position: absolute;
+    z-index: 99;
+    top: 20px;
+    right: 0;
+}
+
+.head_inner .head_right div a {
+    height: 43px;
+    display: block;
+    cursor: pointer;
+    padding: 0 15px;
+    color: #2a2a2a;
+}
+
+.ico_history_26 {
+    background: url("tupian/xuebitu2.png") 0 0 no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+
+.head_inner .head_right span {
+    text-align: center;
+    display: block;
+    opacity: 0.5;
+}
+
+.head_inner .head_right div {
+    position: relative;
+    float: left;
+    width: 56px;
+    height: 43px;
+}
+
+.divide {
+    width: 1px;
+    height: 26px;
+    position: absolute;
+    overflow: hidden;
+    top: 6px;
+    right: 0;
+    background: #cccccc;
+    background: -webkit-linear-gradient(top, rgba(252, 252, 252, 1) 0, rgba(232, 232, 232, 1) 50%, rgba(252, 252, 252, 1) 100%);
+}
+
+.head_inner .head_right .ico_history_26_n {
+    background: url("tupian/xuebitu2.png") -30px 0 no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+
+.head_inner .head_right .ico_history_26_m {
+    background: url("tupian/xuebitu2.png") -90px 0 no-repeat;
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+}
+
+.head_inner .qiuck_user {
+    float: left;
+    width: 61px;
+    height: 43px;
+    padding-right: 0;
+    display: inline-block;;
+}
+
+.head_inner .qiuck_user .qiuck_user_lian {
+    position: relative;
+    padding: 0 0 0 18px;
+    width: 43px;
+    height: 43px;
+    display: block;
+    cursor: pointer;
+}
+
+.head_inner .qiuck_user .qiuck_user_lian .qiuck_user_img {
+    display: inline-block;
+    vertical-align: bottom;
+    border-radius: 50%;
+}
+
+/*看过的hover样式*/
+.head_right_l {
+    position: relative;
+}
+
+.head .head_right .head_right_l:hover .kanguoH {
+    display: block;
+}
+
+.head_inner .head_right .head_right_l .kanguoH {
+    display: none;
+    position: relative;
+    width: 358px;
+    height: 160px;
+    left: -150px;
+    top: 10px;
+    background: #ffffff;
+    box-shadow: 0 0 1px 0;
+    text-align: center;
+}
+
+.head_inner .head_right .head_right_l .kanguoH .kanguoH_div {
+    border: 7px solid orange;
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: -14px;
+    left: 48%;
+    overflow: visible;
+}
+
+.head_inner .head_right .head_right_l .kanguoH .kanguoH_border {
+    position: absolute;
+    width: 356px;;
+    height: 0;
+    border: 1px solid orange;
+    top: -1px;
+}
+
+.head_inner .head_right .head_right_l .kanguoH .kanguoH_div_denglu {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background: orange;
+    top: 40%;
+    left: 39%;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.head_inner .head_right .head_right_l .kanguoH .kanguoH_div_denglu .kanguoH_div_a {
+    line-height: 30px;
+
+}
+
+.head_inner .head_right .head_right_l .kanguoH .kanguoH_div_denglu .kanguoH_div_a .kanguoH_div_a_span {
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.head_inner .head_right .head_right_l .kanguoH .kanguoH_span {
+    margin-top: 100px;
+    font-size: 16px;
+    margin-left: 20px;
+    opacity: 0.5;
+}
+
+.head_right_m {
+    position: relative;
+}
+
+.head .head_right .head_right_m:hover .kanguoH {
+    display: block;
+}
+
+.head_inner .head_right .head_right_m .kanguoH {
+    display: none;
+    position: relative;
+    width: 300px;
+    height: 160px;
+    left: -123px;
+    top: 10px;
+    background: #ffffff;
+    box-shadow: 0 0 1px 0;
+    text-align: center;
+}
+
+.head_inner .head_right .head_right_m .kanguoH .kanguoH_div {
+    border: 7px solid orange;
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: -14px;
+    left: 48%;
+    overflow: visible;
+}
+
+.head_inner .head_right .head_right_m .kanguoH .kanguoH_border {
+    position: absolute;
+    width: 298px;;
+    height: 0;
+    border: 1px solid orange;
+    top: -1px;
+}
+
+.head_inner .head_right .head_right_m .kanguoH .kanguoH_div_denglu {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background: orange;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+.head_inner .head_right .head_right_m .kanguoH .kanguoH_div_denglu .kanguoH_div_a {
+    line-height: 30px;
+
+}
+
+.head_inner .head_right .head_right_m .kanguoH .kanguoH_div_denglu .kanguoH_div_a .kanguoH_div_a_span {
+    color: #ffffff;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.head_inner .head_right .head_right_m .kanguoH .kanguoH_span {
+    margin-top: 100px;
+    font-size: 16px;
+    margin-left: 20px;
+    opacity: 0.5;
+}
+
+.div_bottom {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    z-index: 1;
+    overflow: hidden;
+    background: -webkit-linear-gradient(left, rgba(15, 166, 234, 1) 0, rgba(89, 204, 24, 1) 10%, rgba(15, 166, 234, 1) 60%, rgba(15, 166, 234, 1) 100%);;
+}
+
+/* 导航下的那些数字*/
+.head .site_navigtion {
+    top: 80px;
+    left: 0;
+    z-index: 98;
+    width: 100%;
+    height: 44px;
+    background: #cccccc;
+    margin: 0 auto;
+    position: fixed;
+}
+
+.head .site_navigtion .navigtion_main {
+
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(256, 256, 256, .8);
+    height: 44px;
+}
+
+.head .site_navigtion .navigtion_main .navigtion_inner {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+    height: 44px;
+}
+
+.navigation_area {
+    float: left;
+    height: 16px;
+    border-right: 1px solid #c7c6c0;
+    border-left: 1px solid #ffffff;
+    margin: 14px 0;
+    padding: 0 4px;
+    color: #666;
+
+}
+._right{
+    border-right: none;
+}
+
+.site_navigtion .nav_first_left {
+    border-left: none;
+    margin-left: -8px;
+    padding-left: 0;
+}
+
+.navigation_area .list_item {
+    float: left;
+    height: 45px;
+    line-height: 45px;
+    margin-top: -14px;
+    zoom: 1;
+    vertical-align: top;
+}
+
+.site_navigtion .navigtion_main .navigation_area .list_item .link_nav {
+    display: block;
+    position: relative;
+    float: left;
+    padding: 0 5px;
+    font-size: 14px;
+    color: #444444;
+    text-shadow: 0 0 0 #fff;
+    background: transparent;
+    white-space: nowrap;
+}
+
+.site_navigtion .navigtion_main .navigation_area .list_item .link_nav:hover {
+    color: #FF7800;
+    text-shadow: 0 2px 25px #FF7800;
+
+}
+
+.site_navigtion .navigtion_main .navigation_area .list_item .link_nav .link_inner {
+    padding: 0;
+}
+
+#navigation_area_download {
+    float: right;
+    border: none;
+    margin-right: -10px;
+}
+
+.ioc_vip_21 {
+    background: url("tupian/xuebitu2.png") -190px -140px no-repeat;
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: -18px;
+    top: 10px;
+}
+
+.ico_download_20 {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background: url("tupian/xuebitu2.png") -100px -140px;
+}
+
+/*导航下面那些hover之后的一排排东西*/
+.navigtion_hover{
+    width: 100%;
+    height: 100%;
+    background-color: gainsboro;
+    position: absolute;
+    top: 44px;
+    opacity: 0.6;
+    display: none;
+}
+.navigtion_main:hover .navigtion_hover{
+    display: block;
+}
+.site_navigtion .navigation_sub {
+    width: 1240px;
+    height: 44px;
+    line-height: 42px;
+    position: absolute;
+    top: 44px;
+    font-size: 14px;
+    clear: both;
+    zoom: 1;
+    left: -20px;
+    display: none;
+    text-align: center;
+}
+
+.navigation_ul {
+    display: inline-block;
+    width: 100%;
+    height: 44px;
+}
+.navigation_span:hover{
+    color: #ff7800;
+}
+.navigation_li {
+    float: left;
+    height: 44px;
+    vertical-align: top;
+    margin:0 5px;
+}
+
+.navigation_a {
+
+    width: auto;
+    height: auto;
+}
+
+.navigation_span {
+    height: 44px;
+    display: block;
+    padding: 0 5px;
+    color: #2a2a2a;
+    font-size: 14px;
+    line-height: 44px;
+}
+.list_item:hover .navigation_sub{
+    display: block;
+}
+
+.list_item:hover .navigation_subi{
+
+}
+
+.list_item:hover .navigation_subii{
+     display: block;
+ }
+
+.navigation_subi{
+    position: absolute;
+    background-color: orange;
+    left: -90px;
+    width: 200px;
+    height: 1px;
+    overflow: visible;
+    display: none;
+}
+.navigation_subii{
+    border: 7px solid orange;
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    position: absolute;
+    top: -14px;
+    left: 10px;
+    display: none;
+    overflow: visible;
+}
+.navigation_biao{
+    position: absolute;
+    width: 50px;
+    top: 44px;
+}
+
+
+/*轮播图样式*/
+.site_focus{
+    position: relative;
+    top: 121px;
+    z-index: 2;
+    width: 100%;
+    height: 504px;
+    background-color: #efefef;
+}
+.site_focus .focus_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.focus_img{
+    float: left;
+    display: block;
+    position: absolute;
+    top: 0;left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.focus_title{
+    position: absolute;
+    width: 736px;
+    height: 68px;
+    z-index: 10;
+    margin-left: -306px;
+    background: rgba(0,0,0,.56);
+    bottom: 34px;;
+    left: 50%;
+}
+.focus_title .luobodiv{
+    width: 257px;
+    height: 50px;
+    position: relative;
+    text-align: center;
+    top: 8px;
+}
+.luobodiv1{
+    display: none;
+    float: left;
+    position: absolute;
+}
+ .luopoh2{
+     width: 257px;
+     height: 50px;
+
+    font-size: 18px;
+    color: honeydew;
+}
+.focus_thumbnails{
+   position: absolute;
+    top: 7px;
+    right: 54px;
+
+}
+
+.focus_thumbnails ul{
+    width: 378px;
+    overflow: hidden;
+    height: 56px;
+}
+.focus_thumbnails li {
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 4px;
+    background: #000;
+}
+.link_thumbnails{
+    display: block;
+    width: 85px;
+    height: 50px;opacity: 0.7;
+}
+.link_thumbnails_img{
+    width: 85px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: bottom;
+
+}
+.back{border: 3px solid red;}
+.btn_prev{
+    left: -48px;
+    width: 34px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    background-color: #373737;
+}
+.ico_prev{
+    display: block;
+    left: 10px;
+    position: absolute;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    border: 5px solid #000000;
+    transform: rotate(45deg);
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+.prev_right{
+    left: 375px;
+    transform: rotate(180deg);
+}
+.heaD{
+    width: 100%;
+    height: 625px;
+}
+/*body 的一个大盒子*/
+strong:hover{
+    cursor: pointer;
+    color: #ff7800!important;
+}
+.site_container{
+    width: 100%;
+    position: relative;
+    z-index:1;
+    clear: both;
+}
+.container_inner{
+    padding: 40px 0;
+    width: 1240px;
+    margin: 0 auto;
+}
+.wrapper{
+    height: 587px;
+
+    margin-bottom: 20px;
+}
+.mod_row_l1s3{
+    width: 955px;
+    float: left;
+
+    height: 587px;
+}
+.mod_pandant_bb{
+    float: right;
+    width: 265px;
+    height: 587px;
+}
+.mod_hd{
+    height: 42px;
+    position: relative;
+}
+.mod_bd{
+    position: relative;
+}
+.mod_title{
+    position: relative;
+    height: 32px;
+    width: 955px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+.title{
+    display: inline-block;
+    zoom: 1;
+    max-width: 192px;
+    margin-right: 10px;
+    font-weight: 500;
+    color: #2a2a2a;
+    vertical-align: bottom;
+}
+.text_large{
+    font-size: 30px;
+    line-height: 32px;
+    display: inline-block;
+    color: #000000;
+    height: 32px;
+}
+.mod_title .title a{
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+.title_sub{
+    display: inline-block;
+    width: 80%;
+    height: 16px;
+    line-height: 16px;
+    padding-left: 5px;
+    margin-left: -10px;
+    vertical-align: bottom;
+}
+.round_text{
+    color: #fff;
+    margin:  4px;
+    background-color: orange;
+}
+.btn_inner{
+    font-style: normal;
+    font-size: 1em;
+}
+.mod_figure_h{
+    width: 370px;
+    height: 320px;
+    clear: both;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+.mod_figures{
+    width: 565px;
+    height: 320px;
+    float: left;
+
+}
+.figure{
+    width: 370px;
+    height: 320px;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+.figure_sign{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: orange;
+}
+.triangle_right{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin: -12px 0 0 -6px;
+    border: 12px solid transparent;
+    border-left-color: #fff;
+    border-left-width: 18px;
+}
+.figure_caption_sign{
+   margin-left: 50px;
+    background: rgba(0,0,0,.45);
+}
+.figure_title{
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px 0;
+    padding-top: 0;
+    font-size: 14px;
+    color: #fff;
+}
+.figure_caption{
+    position: relative;
+    margin-top: -50px;
+    width: 320px;
+    height: 40px;
+    padding: 5px 0;
+    line-height: 20px;
+}
+.item_li .figure_title{
+    height: 24px;
+    line-height: 24px;
+    margin: 0 10px 0;
+    padding-top: 0;
+    font-size: 12px;
+    color: #000;
+    display: block;
+    font-weight: normal;
+}
+.figure_desc{
+    line-height: 16px;
+    color: #fff;
+    margin: 0 10px 0;
+    display: block;
+}
+/*右边的六个小图片*/
+.figures_list{
+    margin: -10px;
+}
+.item_li{
+    display: block;
+    float: left;
+
+    margin: 5px;
+    padding: 5px;
+    vertical-align: top;
+    font-size: 12px;
+    letter-spacing: normal;
+    margin-bottom: 15px;
+    width: 175px;
+}
+.figure-li{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    overflow: hidden;
+}
+.figure-li img{
+    width: 175px;
+    height: 100px;
+}
+.figure_mask{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.45);
+    width: 170px;
+    height: 20px;
+    line-height: 20px;
+    color: #ffffff;
+    padding-left: 5px;
+}
+.mod_figure_h_85 .figure_title{
+    color: #333333;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    display: block;
+    overflow: hidden;
+    font-weight: normal;
+    margin: 5px 0 0 0;
+}
+.mod_figures .figure_title{
+    margin-top: 5px;
+}
+.figure_info{
+    color: #989898;
+    font-size: 0;
+    margin-top: 4px;
+}
+.figure_info_play{
+    height: 16px;
+    line-height: 16px;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.ico_play_12{
+    background: url("tupian/xuebitu2.png") no-repeat;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.figure_info_play .ico_play_12{
+    background-position: -150px 0;
+    margin: 2px 4px 0 0;
+    vertical-align: top;
+}
+.mod_figures_tencent{
+    width: 760px;
+    height: 185px;
+    margin-right: 20px;
+    float: left;
+}
+.figures_title{
+    margin-bottom: 14px;
+    text-align: center;
+}
+.mod_figures_tencent{
+    position: relative;
+    height: 18px;
+    text-align: center;
+    z-index: 2;
+}
+.after{
+    height: 1px;
+    background: -webkit-linear-gradient(left,rgba(186,186,186,0) 0,rgba(186,186,186,1) 20%,rgba(186,186,186,1) 80%,rgba(186,186,186,0) 100%);
+    position: absolute;
+    top: 8px;left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.round_text_wrap{
+    height: 18px;
+    padding:10px;
+    position: relative;
+    z-index: 3;
+    background: white;
+}
+.round_text_wrap .round_text{
+     background: #FF6500;
+     color: snow;
+     border-radius: 3px;
+     width: 56px;
+     height: 18px;
+     line-height: 18px;
+     text-align: center;
+    padding:0 5px;
+ }
+.mod_figures_promotion{
+    float: left;
+    width: 175px;
+    height: 185px;
+    position: relative;
+    text-align: center;
+}
+
+/*原创精选*/
+.lazy_wrapper{
+
+}
+.lazy_wrapper .wrapper {
+    margin-bottom: 20px;
+    height: 225px;
+}
+.mod_title .title {
+    display: inline-block;
+    zoom: 1;
+    max-width: 192px;
+    margin-right: 10px;
+    font-weight: 500;
+    color: #2a2a2a;
+    vertical-align: bottom;
+}
+.mod_row_s5{
+    width: 955px;
+    float: left;
+}
+
+.mod_title{
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    zoom: 1;
+    font-size: 0;
+}
+.text_large{
+    font-size: 30px;
+    display: block;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+}
+/*精选开始*/
+.mod_choice .mod_title{
+    height: 32px;
+    width: 265px;
+}
+.text_medium{
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+    font-weight: 500;
+}
+.mod_pandant_bb .mod_bd{
+    background: #f0f0f0
+}
+.choice_figure_large{
+    border-bottom: 1px solid #dddddd;
+    width: 100%;
+
+    padding-bottom: 10px;
+}
+.choice_figure_large img{
+    width: 265px;
+    height: 185px;
+}
+.choice_figure_large .figure_title {
+    height:36px;
+    line-height: 16px;
+    padding: 0 15px;
+    overflow: hidden;
+    font-weight: normal;
+    font-size: 16px;
+    color: #333333;
+    margin: 10px 0 0 0;
+    display: block;
+
+}.mod_figure_h_85{
+    width: 256px;
+    height: 110px;
+    padding-bottom: 10px;
+ }
+
+.mod_figure_h_85  .figures_list .list_item{
+    position: relative;
+    margin: 10px;
+    height: 50px;
+}
+.mod_figure_h_85 .figures_list{
+    margin: 10px 0 10px 0;
+}
+.mod_figure_h_85 .figures_list .list_item .figure{
+    position:absolute;
+    left: 0;
+    top: 0;
+    width: 85px;
+    height: 50px;
+}
+.mod_figure_h_85 .figures_list .list_item .figure img{
+    width: 85px;
+    height: 50px;
+    display: inline-block;
+
+}
+
+.mod_figure_h_85 .figures_list .list_item .figure_title{
+    margin-left: 95px;
+    display: block;
+    left: 0;
+
+}
+.figure_des{
+    display: inline-block;
+    margin-left: 95px;
+    color: #999;
+}
+.mod_fd{
+   width: 265px;
+    height: 150px;
+
+}
+.mod_fd img {
+    width: 265px;
+    height: 150px;
+}
+.mod_top_simple{
+    width: 265px;
+    float: right;
+    height: 225px;
+}
+.mod_top_simple .figures_list{
+    margin-top: -11px;
+}
+.mod_top_simple .mod_figure_h_85 .figures_list .list_item .figure_title{
+ padding: 10px 0 5px 5px;
+}
+.mod_top_simple .mod_figure_h_85 .figures_list .list_item {
+    height: 65px;
+
+}
+.mod_top_simple .mod_figure_h_85 .figures_list .list_item .figure{
+    width: 65px;
+    height: 65px;
+
+}
+.mod_top_simple .mod_figure_h_85 .figures_list .list_item .figure img{
+    width: 65px;
+    height: 65px;
+    vertical-align: middle;
+}
+.mod_top_simple .mod_figure_h_85 .figures_list .list_item{
+    margin-bottom: 20px;
+    background: #f0f0f0;
+
+}
+.ico_vplus_21{
+    width: 21px;
+    height: 21px;
+    background: url("tupian/xuebitu2.png")-110px -110px no-repeat;
+    position: absolute;
+    left: 170px;
+    top: 7px;
+}
+/*热播剧*/
+.rebo{height: 400px;margin-top: 20px}
+.reboju .choice_figure_large img{
+    height: 100px;
+}
+.reboju .mod_row_l1s3{
+    height:400px;
+}
+.reboju .mod_fd{
+    height: 110px;
+}
+.reboju .mod_fd img{
+    height: 110px;
+    width: 265px;
+    margin-bottom: 0;
+}
+.reboju .mod_pandant_bb{
+    height: 360px;
+}
+.top_list_ver{
+    height: 108px;
+}
+
+.title_sur{
+     position: absolute;
+    height: 32px;
+    top: 1px;
+    left:90px;
+}
+.reboul{
+    height: 32px;
+}
+.reboli{
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+.reboli a span{
+    display: block;
+    padding: 3px;
+    height: 16px;
+    font-size: 10px;
+    line-height: 16px;
+    margin-top: 10px;
+}
+.rebolidiv{
+    width: 1px;
+    height: 16px;
+    background: #e1e1e1;
+    right: -5px;
+   top: 14px;
+    position: absolute;
+}
+.rebolidiv_right{
+    position: absolute;
+    right: -10px;
+    top: 17px;
+    border: 4px solid #919191;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+.ico_text_top{
+    position: absolute;
+    width: 26px;
+    height: 7px;
+    background: url("tupian/xuebitu2.png")0 -140px no-repeat;
+    bottom: 0;
+    left: 100px;
+}
+.titl{
+    position: absolute;
+   bottom: 0;
+
+}
+.title_ad_130{
+    height: 30px;
+    width: 130px;
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+}
+.lar{
+    border-bottom: none;
+}
+.choice_figure_large .figure_sign{
+    top: 64px;
+    width: 36px;
+    height: 36px;
+    color: honeydew;
+
+}
+.figure_sign .figure_sign1{
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    color: white;
+    line-height: 36px;
+}
+.num{
+    display: inline-block;
+    zoom: 1;
+    width: 14px;
+    height: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    vertical-align: middle;
+    background: orange;
+    font-style: normal
+}
+.figure_signname{
+   position: absolute;
+    background: #333333;
+    top:0;
+    left: 36px;
+    width: 219px;
+    padding-left: 10px;
+    background: rgba(0,0,0,.45);
+    line-height: 36px;
+    font-size: 16px;
+    color: white;
+}
+.top_list {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+
+}
+.top_list li{
+    position: relative;
+    float: none;
+    width: 100%;
+    margin: 0 0 20px;
+}
+.top_list li .num{
+    margin-left: 10px;
+}
+.top_list li .title_inner{
+    font-size: 14px;
+}
+.mofimg{
+    margin: -10px 0 0;
+}
+
+/*结尾部分*/
+.jiewei{
+    background-color: #EBEBEB;
+    clear: both;
+    overflow: hidden;
+    height: 396px;
+    width: 100%;
+}
+.jieweinei{
+    width: 1240px;
+   height: 361px;
+    margin: 25px auto 10px;
+    overflow: hidden;
+}
+.jieweis{
+    padding: 15px 0 20px 80px;
+    overflow: hidden;
+    background-color: #fff;
+
+}
+.jieweis1{
+    float: left;
+    width: 320px;
+    margin-right: 40px;
+    padding-right: 40px;
+    border-right: 1px solid #cccccc;
+}
+.contentinfo_title{
+    color: #979797;
+    font-size: 14px;
+    font-style: normal
+}
+.jieweis .jieweis1 ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding-top: 6px;
+}
+.jieweis .jieweis1 ul li a{
+    color: #979797;
+    display: block;
+}
+.jieweis2{
+    width: 160px;
+}
+.jieweis3{
+    width: 255px;
+}
+.jieweis4{
+    border: none;
+    width: 140px;
+    margin:0;
+}
+.jieweiz{
+    width: 1240px;
+    padding: 20px 0 15px 160px;
+    background-color: #F7F7F7;
+
+}
+.jieweiz .jieweizspan{
+    position: relative;
+    left: -60px;
+    top: 20px;
+    height: 40px;
+    font-size: 14px;
+    color: #979797;
+    vertical-align: top;
+}
+.jieweizde{
+    position: relative;
+    width: 1080px;
+    left: 0;
+    padding-bottom: 50px;
+}
+.jieweiz .reboul .reboli{
+    margin-bottom: 5px;
+}
+.jieweiz .reboul .re{
+    margin: 0;
+}
+.jieweiz .reboul .reboli a{
+    color: #919191;
+}
+.jieweiz .reboul .reboli span{
+    display: inline-block;
+    margin: 0;
+    color: #919191;
+    vertical-align: middle;
+    line-height: 16px;
+    height: 16px;
+}
+.mod_footer{
+    width: 1240px;
+    padding: 10px 0 30px 0;
+    
+}
+.mod_footer a{
+    color: #838383;
+}
+.footermenu{
+    text-align: center;
+    width: 1240px;
+    height: 30px;
+}
+.footermenu a{
+display: inline-block;
+    line-height: 30px;
+    text-align: center;
+}
+.copyrighten{
+    text-align: center;
+    width: 1240px;
+    height: 30px;
+}
+.copyrightzh{
+    color: #838383;
+    text-align: center;
+    width: 1240px;
+    height: 30px;
+}
+/*登录*/
+.dengluzheng{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    position: fixed;
+    text-align: center;
+    opacity: 0.6;
+    display: none;
+}
+.denglu{
+    z-index: 9999;
+    position: fixed;
+    width: 622px;
+    height: 418px;
+    background-color: #ffffff;
+    top: 124px;
+    left:400px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+.denglu2{
+    position: relative;
+    top: -52px;
+    left: 0;
+    display: none;
+    background-color: #ffffff;
+}
+.denglu3{
+    position: relative;
+    top: -52px;
+    left: 0;
+    display: none;
+    background-color: #ffffff;
+}
+.dengluli{
+    background-color: #f1f1f1;
+    width: 620px;
+    border: 1px solid #b1b3b4;
+    height: 50px;
+
+}
+.dengluli span{
+    font-size: 16px;
+    line-height: 50px;
+    display: inline-block;
+    width: 310px;
+    height: 50px;
+    zoom: 1;
+    text-align: center;
+}
+.dengluspanq{
+    float: left;
+}
+.dengluspanw{
+    float: right;
+}
+.dengguan{
+    position: absolute;
+    width: 47px;
+    height: 28px;
+    border-left: 1px;
+    background: url("tupian/denglu1.png")0 0 no-repeat;
+    right: 1px;
+    top: 1px;;
+}
+
+.dengguan:hover{
+    background-position: -47px 0;
+}
+.denglutu{
+    background: url("tupian/denglu1.png")0 -140px no-repeat;
+    height: 82px;
+    width: 82px;
+    position: absolute;
+    top: 100px;
+    left: 43%;
+    margin-bottom: 40px;
+
+}
+.dengluqq{
+    background: url("tupian/denglu1.png")0 -280px no-repeat;
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    left: 35%;
+    top: 230px;
+}
+.dengluwx{
+    background: url("tupian/denglu1.png")0 -230px no-repeat;
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    left: 35%;
+    top: 290px;
+}
+.dengluxia{
+    width: 622px;
+    height: 316px;
+    background-color: #ffffff;
+}
+.dengluxia p{
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+.dengluxia .denglup{
+    margin-bottom: 16px;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #333;
+}
+.dengluxia p a{
+    color: #3481cf;
+    font-size: 16px;
+}
+.denglubottom{
+    position: absolute;
+    bottom: 0;
+    width: 622px;
+    height: 16px;
+    margin-bottom: 8px;
+}
+.denglubottom span{
+    display: block;
+    float: left;
+}
+.denglubottom a{
+    float: right;
+    display: block;
+    margin-right: 5px;
+}
+
+.dengluwxb{
+    width: 150px;
+    height: 150px;
+}
+.dengluqqb{
+    width: 134px;
+    height: 134px;
+}
+.weixinp{
+    width: 210px;
+    position: absolute;
+    height: 30px;
+    line-height: 15px;
+    padding: 5px;
+    font-size: 12px;
+    color: #808080;
+    background: url("tupian/denglu1.png")0 -40px no-repeat;
+    top: 320px;
+    left: 33%;
+}
+.checked{
+background: url(//imgcache.qq.com/ptlogin/v4/style/40/images/icon_3_tiny.png) no-repeat -92px -163px;
+    float: left;
+    width: 18px;
+    height: 18px;;
+    margin-left: 10px;
+    display: none;
+}
+.ch{
+    display: none;
+    background-position:-74px -163px ;
+}
+.dengluspanb1{
+    width: 310px;
+    height: 2px;
+    background-color:#2192bc;
+    left: 0;
+    top: 50px;
+    position: absolute;
+}
+.dengluspanb2{
+    width: 310px;
+    height: 2px;
+    background-color:#11c900;
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+.backtop{
+    width: 52px;
+    height:52px;
+    background-color: #f9f9f9;
+    position: fixed;
+    border: 1px solid #dcdcdc;
+    overflow: hidden;
+    cursor: pointer;
+    bottom: 100px;
+    z-index: 100;
+    right: 0;
+}
+.backtop i{
+    background: url("tupian/backtop.png")0 -34px no-repeat;
+    height: 34px;
+    width: 34px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+/*切换图片的样式*/
+
+.mod_ad_spread{
+    position: relative;
+    width: 1350px;
+    height: 105px;
+    margin-bottom: 20px;
+}
+.ad_spread_lists{
+    width: 1350px;
+    height: 105px;
+    font-size: 0;
+}
+.list_items{
+    float: left;
+    width: 250px;
+    height: 105px;
+    line-height: 105px;
+    display: inline-block;
+    overflow: hidden;
+}
+.simg{
+    float: left;
+    display: inline-block;
+    width: 250px;
+    height: 105px;
+}
+.simg img{
+    width: 250px;
+    height: 105px;
+}
+.bigimg{
+    display: inline-block;
+    line-height: 95px;
+    float: left;
+    height:95px;
+    width: 0;
+    margin-top: 10px;
+}
+.list_items .bigimg img{
+    width: 100%;
+}
