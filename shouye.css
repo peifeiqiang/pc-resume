@@ -553,8 +553,8 @@ img, input {
 }
 
 .list_item:hover .navigation_subii{
-     display: block;
- }
+    display: block;
+}
 
 .navigation_subi{
     position: absolute;
@@ -634,15 +634,15 @@ img, input {
     float: left;
     position: absolute;
 }
- .luopoh2{
-     width: 257px;
-     height: 50px;
+.luopoh2{
+    width: 257px;
+    height: 50px;
 
     font-size: 18px;
     color: honeydew;
 }
 .focus_thumbnails{
-   position: absolute;
+    position: absolute;
     top: 7px;
     right: 54px;
 
@@ -824,7 +824,7 @@ strong:hover{
     border-left-width: 18px;
 }
 .figure_caption_sign{
-   margin-left: 50px;
+    margin-left: 50px;
     background: rgba(0,0,0,.45);
 }
 .figure_title{
@@ -947,6 +947,7 @@ strong:hover{
     height: 18px;
     text-align: center;
     z-index: 2;
+    margin-top: 10px;
 }
 .after{
     height: 1px;
@@ -962,23 +963,25 @@ strong:hover{
     position: relative;
     z-index: 3;
     background: white;
+    margin-top: 10px;
 }
 .round_text_wrap .round_text{
-     background: #FF6500;
-     color: snow;
-     border-radius: 3px;
-     width: 56px;
-     height: 18px;
-     line-height: 18px;
-     text-align: center;
+    background: #FF6500;
+    color: snow;
+    border-radius: 3px;
+    width: 56px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
     padding:0 5px;
- }
+}
 .mod_figures_promotion{
     float: left;
     width: 175px;
     height: 185px;
     position: relative;
     text-align: center;
+    margin-top: 10px;
 }
 
 /*原创精选*/
@@ -1053,9 +1056,9 @@ strong:hover{
     display: block;
 
 }.mod_figure_h_85{
-    width: 256px;
-    height: 110px;
-    padding-bottom: 10px;
+     width: 256px;
+     height: 110px;
+     padding-bottom: 10px;
  }
 
 .mod_figure_h_85  .figures_list .list_item{
@@ -1092,7 +1095,7 @@ strong:hover{
     color: #999;
 }
 .mod_fd{
-   width: 265px;
+    width: 265px;
     height: 150px;
 
 }
@@ -1109,7 +1112,7 @@ strong:hover{
     margin-top: -11px;
 }
 .mod_top_simple .mod_figure_h_85 .figures_list .list_item .figure_title{
- padding: 10px 0 5px 5px;
+    padding: 10px 0 5px 5px;
 }
 .mod_top_simple .mod_figure_h_85 .figures_list .list_item {
     height: 65px;
@@ -1162,7 +1165,7 @@ strong:hover{
 }
 
 .title_sur{
-     position: absolute;
+    position: absolute;
     height: 32px;
     top: 1px;
     left:90px;
@@ -1188,7 +1191,7 @@ strong:hover{
     height: 16px;
     background: #e1e1e1;
     right: -5px;
-   top: 14px;
+    top: 14px;
     position: absolute;
 }
 .rebolidiv_right{
@@ -1210,7 +1213,7 @@ strong:hover{
 }
 .titl{
     position: absolute;
-   bottom: 0;
+    bottom: 0;
 
 }
 .title_ad_130{
@@ -1251,7 +1254,7 @@ strong:hover{
     font-style: normal
 }
 .figure_signname{
-   position: absolute;
+    position: absolute;
     background: #333333;
     top:0;
     left: 36px;
@@ -1294,7 +1297,7 @@ strong:hover{
 }
 .jieweinei{
     width: 1240px;
-   height: 361px;
+    height: 361px;
     margin: 25px auto 10px;
     overflow: hidden;
 }
@@ -1377,7 +1380,7 @@ strong:hover{
 .mod_footer{
     width: 1240px;
     padding: 10px 0 30px 0;
-    
+
 }
 .mod_footer a{
     color: #838383;
@@ -1388,7 +1391,7 @@ strong:hover{
     height: 30px;
 }
 .footermenu a{
-display: inline-block;
+    display: inline-block;
     line-height: 30px;
     text-align: center;
 }
@@ -1561,7 +1564,7 @@ display: inline-block;
     left: 33%;
 }
 .checked{
-background: url(//imgcache.qq.com/ptlogin/v4/style/40/images/icon_3_tiny.png) no-repeat -92px -163px;
+    background: url(//imgcache.qq.com/ptlogin/v4/style/40/images/icon_3_tiny.png) no-repeat -92px -163px;
     float: left;
     width: 18px;
     height: 18px;;
