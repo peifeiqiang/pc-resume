@@ -22,6 +22,47 @@ var Checked=utils.getByClass(document,'checked')[0];
 var Ch=utils.getByClass(document,'ch')[0];
 var Dengluspanq=utils.getByClass(document,'dengluspanq');
 var Dengluspanw=utils.getByClass(document,'dengluspanw');
+//搜索
+function baiduSuggestion(word, callback) {
+    jsonp('http://suggestion.baidu.com/su',
+        {wd: word}, 'cb', function (data) {
+            callback(data);
+        });
+}
+var searchInput = document.querySelector('#serach_ipt');
+var searchBtn = document.querySelector('#search_btn');
+var ul = document.getElementById('jsonpul');
+searchInput.onclick=function(){
+    searchInput.value='';
+}
+
+window.onload = function () {
+    ul.onclick = function (e) {
+        e || (e = window.event);
+        var target = e.target || e.srcElement;
+        window.open('https://www.baidu.com/s?wd=' + encodeURIComponent(target.innerHTML),'_blank');
+    };
+    searchBtn.onclick = function () {
+        var val = searchInput.value;
+        if (val) {
+            baiduSuggestion(val, function (data) {
+                ul.innerHTML = '';
+                var list = data.s;
+                if (list.length === 0) {
+                    return;
+                }
+                var fragement = document.createDocumentFragment();
+                for (var i = 0, len = list.length; i < len; i++) {
+                    var li = document.createElement('li');
+                    li.innerHTML = list[i];
+                    fragement.appendChild(li);
+                }
+                ul.appendChild(fragement);
+            })
+        }
+    }
+}
+
 //导航消失F
 window.onscroll=Headdisplay;
 function Headdisplay(){
@@ -52,6 +93,7 @@ Backtop.onclick=function(){
     },10)
 }
 //登录账户样式
+
 Dengqq.onclick=function(){
     utils.css(Denglu,"display","block");
     utils.css(Dengluback,"display","block");
@@ -271,6 +313,5 @@ function toMimute(){
 }
 
 toMimute()
-
 
 
